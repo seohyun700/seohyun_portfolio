@@ -12,12 +12,12 @@ interface Milestone {
 
 export default function Hero() {
   const [selectedMilestones, setSelectedMilestones] = useState<string[]>([
-    "knibrt", "collaboration", "pdca", "gpa"
+    "knibrt", "ga4", "pdca", "gpa"
   ]);
 
   const milestones: Milestone[] = [
     { id: "knibrt", name: "K-NIBRT 바이오의약품 수료", weight: 25, description: "올리고뉴클레오타이드 및 CDMO 프로세스 이론 습득", category: "Bio-Tech" },
-    { id: "collaboration", name: "AQUI 보컬/갈등 조정", weight: 20, description: "30분 전석 완판을 이끈 절충/협상 소통력", category: "Biz BD" },
+    { id: "ga4", name: "구글 애널리틱스 (GA4) 자격", weight: 20, description: "데이터 기반 디지털 채널 사용자 분석 및 마케팅 지표 수립", category: "Analytics" },
     { id: "pdca", name: "유머스트R&D 표준 프로토콜 개발", weight: 20, description: "PDCA 사이클 기반 비임상 데이터 신뢰성 확보", category: "Strategy" },
     { id: "gpa", name: "학부 누적 GPA 3.79/4.5", weight: 15, description: "작은 일에 성실하여 축적한 전공 이론의 깊이", category: "Academic" },
     { id: "license", name: "글로벌 어학 (OPIc IH, TOEIC 835)", weight: 20, description: "글로벌 라이선싱 계약 및 파트너십을 위한 소통 기반", category: "Comm" },
@@ -54,8 +54,8 @@ export default function Hero() {
         </div>
 
         {/* Header Grid matching Bestra way */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-16">
-          <div className="lg:col-span-8">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mb-16">
+          <div className="lg:col-span-6">
             <h1 className="font-display font-medium text-4xl sm:text-6xl lg:text-7xl tracking-tight text-gray-900 leading-none">
               Business, the <br />
               <span className="text-sage-700 font-semibold relative">
@@ -64,8 +64,19 @@ export default function Hero() {
               </span> way.
             </h1>
           </div>
-          <div className="lg:col-span-4">
-            <p className="text-gray-600 text-base sm:text-lg font-light leading-relaxed">
+          
+          {/* Centered Image Column */}
+          <div className="lg:col-span-3 flex justify-center lg:justify-start items-center">
+            <img 
+              src="https://raw.githubusercontent.com/seohyun700/seohyun_portfolio/502c6244b1c6371197dab24116282c544cb69be7/pngegg%20(1).png" 
+              alt="Strategic Bio Illustration" 
+              className="h-28 sm:h-36 lg:h-32 w-auto object-contain hover:scale-105 transition-transform duration-300"
+              referrerPolicy="no-referrer"
+            />
+          </div>
+
+          <div className="lg:col-span-3">
+            <p className="text-gray-600 text-sm sm:text-base font-light leading-relaxed">
               건국대학교 의생명공학과를 기반으로, K-NIBRT 실무 이론과 유머스트R&D 비임상 비즈니스 판단력을 결합하여 바이오 제약 산업의 차별화된 가치를 창출합니다.
             </p>
             <div className="mt-4 flex items-center gap-3">
@@ -125,6 +136,16 @@ export default function Hero() {
                   <div>
                     <p className="text-xs text-gray-400 font-mono">SPECIALIZED TRAINING</p>
                     <p className="text-xs font-bold text-gray-800 text-amber-800">K-NIBRT 바이오의약품 이론교육과정</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-lg bg-teal-50 flex items-center justify-center text-teal-600">
+                    <Award className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-gray-400 font-mono font-bold tracking-wider text-teal-700">BUSINESS ANALYTICS</p>
+                    <p className="text-xs font-bold text-gray-800">구글 애널리틱스 (GA4) 공인 자격 수료</p>
                   </div>
                 </div>
               </div>

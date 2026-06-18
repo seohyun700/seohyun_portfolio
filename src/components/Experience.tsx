@@ -12,7 +12,7 @@ export default function Experience() {
       id: "umust",
       company: "유머스트R&D",
       role: "코스메슈티컬 원료 개발 & 데이터 비임상 분석 인턴",
-      duration: "6개월 실무",
+      duration: "4개월 실무",
       description: "피부 세포 생존도(Cell Viability) 및 독성 비임상 평가 연구를 기반으로 상업 연구 의사결정을 실체화하였습니다.",
       bulletPoints: [
         "독성 시험 및 피부 세포 비임상 실험 결과 분석을 통한 원료 후보 가치 제안 및 상품성 정량 가치 평가",

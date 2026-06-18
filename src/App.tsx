@@ -132,7 +132,7 @@ export default function App() {
                 <div className="bg-slate-50 rounded-2xl p-4 border border-gray-150">
                   <p className="text-[9px] text-gray-400 font-mono block uppercase">SPECIAL TRAINING & SCORE</p>
                   <p className="text-xs text-gray-800 mt-1 font-bold">
-                    K-NIBRT 이론 이수 / OPIc IH & TOEIC 835
+                    K-NIBRT 이론 이수 / GA4 자격 / OPIc IH & TOEIC 835
                   </p>
                 </div>
 
