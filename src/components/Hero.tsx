@@ -77,7 +77,7 @@ export default function Hero() {
 
           <div className="lg:col-span-3">
             <p className="text-gray-600 text-sm sm:text-base font-light leading-relaxed">
-              건국대학교 의생명공학과를 기반으로, K-NIBRT 실무 이론과 유머스트R&D 비임상 비즈니스 판단력을 결합하여 바이오 제약 산업의 차별화된 가치를 창출합니다.
+              의생명공학과 전공 지식을 기반으로, 비즈니스와 바이오를 통역하는 인재가 되겠습니다.
             </p>
             <div className="mt-4 flex items-center gap-3">
               <a 
